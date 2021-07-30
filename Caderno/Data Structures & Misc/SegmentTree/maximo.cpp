@@ -45,7 +45,6 @@ pair<int, int> int query(int node, int tl, int tr, int l, int r)
         return tree[node];
     }
     // range represented by a node is partially inside and partially outside the given range
-    // Range representada pelo nó parcialmente dentro da range
     int tm = (tl + tr) / 2;
     pair<int,int> p1 = query(2*node, tl, tm, l, r);
     pair<int,int> p2 = query(2*node+1, tm+1, tr, l, r);
